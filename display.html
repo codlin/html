@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jonus">
+    <title>布局之Display属性</title>
+    <link rel="stylesheet" href="display.css" />
+  </head>
+  <body>
+    <header>
+      <h1>布局练习之Display属性</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>首页</li>
+        <li>块元素</li>
+        <li>内联元素</li>
+      </ul>
+    </nav>
+    <main>
+    <article>
+	  <h2>块元素</h2>
+	  <section>
+	    <h3>1. div设置display: block</h3>
+	    <div class="block">
+	      <p>块元素1</p>
+		  <p>块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>2. 块元素设置display: block</h3>
+	    <div>
+	      <p class="block">块元素1</p>
+		  <p class="block">块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>3. div设置display: inline</h3>
+	    <div class="inline">
+	      <p>块元素1</p>
+		  <p>块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>4. 块元素设置display: inline</h3>
+	    <div>
+	      <p class="inline">inline块元素1</p>
+		  <p class="inline">inline块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>5. div设置display: flex</h3>
+	    <div class="flex">
+	      <p>块元素1</p>
+		  <p>块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>6. 块元素设置display: flex</h3>
+	    <div>
+	      <p class="flex">flex块元素1</p>
+		  <p class="flex">flex块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>7. div设置display: inline-block</h3>
+	    <div class="inlineblock">
+	      <p>块元素1</p>
+		  <p>块元素2</p>
+	    </div>
+		<p>块元素3<p>
+	  </section>
+	  <section>
+	    <h3>8. 块元素设置display: inline-block</h3>
+	    <div>
+	      <p class="inlineblock">inline-block块元素1</p>
+		  <p class="inlineblock">inline-block块元素2</p>
+		  <p>块元素3<p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>9. div设置display: inline-flex</h3>
+	    <div class="inlineflex">
+	      <p>块元素1</p>
+		  <p>块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>10. 块元素设置display: inline-flex</h3>
+	    <div>
+	      <p class="inlineflex">inline-flex块元素1</p>
+		  <p class="inlineflex">inline-flex块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>11. 块元素设置display: block，同时设置块元素的Box属性，其中{width: 100px; height: 40px;}。可见：元素的各个属性均起作用并且会“推开”父元素</h3>
+	    <div>
+	      <p class="block box">块元素1</p>
+		  <p class="block box">块元素2</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>12. div设置display: inline，同时设置DIV的Box属性。可见：DIV元素（绿色）宽和高在inline时不起作用，Margin和Padding仍然起作用，但不会推开父元素</h3>
+		<div class="border">
+	      <div class="inline box">
+	        <p>块元素1</p>
+		    <p>块元素2</p>
+	      </div>
+		 </div>
+	  </section>
+	  <section>
+	    <h3>13. 块元素设置display: inline，同时设置块元素的Box属性，其中{width: 100px; height: 40px;}。可见：元素宽和高在inline时不起作用，Margin和Padding仍然起作用，但不会推开父元素</h3>
+		<p>块元素1<p>
+	    <div>
+	      <p class="inline box">块元素1</p>
+		  <p class="inline box">块元素2</p>
+	    </div>
+	  </section>
+	  <h2>内联元素</h2>
+	  <section>
+	    <h3>1. 将Display: inline应用于inline元素</h3>
+	    <div>
+	      <p>这是一个段落，这是<strong class="inline box">strong</strong>和<em class="inline box">em</em>元素，它们是内联元素。</p>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>2. 将Display: block应用于inline元素</h3>
+	    <div>
+	      <p>这是一个段落，这是<strong class="block box">strong</strong>和<em class="block box">em</em>元素，它们是内联元素。</p>
+	    </div>
+	  </section>
+    </article>
+    <aside>
+    <h1>相关主题</h1>
+    </aside>
+  </main>
+  <footer>
+    <h5>© All rights reserved.</h5>
+  </footer>
+  </body>
+</html>
