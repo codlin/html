@@ -1,0 +1,120 @@
+body {
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
+
+.container {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+}
+
+.item {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #ffffff;
+  margin: 10px;
+  width: 250px;
+  /* height: 450px; */
+  border-radius: 8px;
+}
+
+.item .detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.item .detail img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.item .detail .title {
+  /* 文本显示两行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  margin: 5px;
+}
+
+.coupon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  /* height: 28px; */
+
+  border: 1px solid #f76260;
+  border-radius: 3px;
+  position: relative;
+  background: radial-gradient(circle at right, transparent 3px, #f76260 0) top
+      left / 40% 100% no-repeat,
+    top right / 60% 100% no-repeat #ffffff;
+}
+
+.coupon .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.coupon .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60%;
+  font-size: 12px;
+  color: #f76260;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #f76260;
+  border-radius: 3px;
+  color: #f76260;
+  font-size: 12px;
+
+  /* height: 28px; */
+  padding: 0px 5px;
+  margin: 0px 5px;
+}
+
+.item .toolbar {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 0px 8px 8px;
+  background: linear-gradient(90deg, #f78260 0%, #f76260 50%);
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.selected {
+  border: 2px solid green;
+}
