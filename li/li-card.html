@@ -5,16 +5,17 @@
     <meta name="author" content="Jonus">
     <title>li练习</title>
     <link rel="stylesheet" href="li-card.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <!-- <div class="coupon">
-    <div class="left">券</div>
-    <div class="right">3 元</div>
-  </div> -->
   <body>
-      <p>点击添加li：<button type="button" id="add-li">添 加</button></p>
-      <ul class="container">
+    <div class="menu">
+      <p>点击添加li：<button type="button" id="add-li">添 加</button><label> 已选择：</label><span id="total">0</span> 条</p>
+    </div>
+    <div class="goods">
+      <ul class="container row">
       </ul>
-      <script src="../jquery-3.6.0.js"></script>
-      <script src="card.js"></script>
+    </div>
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="card.js"></script>
   </body>
 </html>
